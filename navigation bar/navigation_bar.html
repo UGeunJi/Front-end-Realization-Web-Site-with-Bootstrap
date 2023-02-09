@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bar Example</title>
+  <link rel="stylesheet" type="text/css" href="navigation_bar.css">
+
+  <style>
+
+    li { display: inline; }
+
+    
+    li { float: left; }
+    li a { display: block; background-color: #131313; padding: 8px; }
+
+    /* 글자 스타일 */
+    ul { background-color: #000000; list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+    li { float: left; }
+    li a { display: block; background-color: #040404; color: #fcfcfb; padding: 8px; text-decoration: none;
+        text-align: center; font-weight: thin; }
+    li a:hover { background-color: #060606; color: rgb(0, 0, 0); }
+
+
+    li a.current { background-color: #000000; color: white; }
+    li a:hover:not(.current) { background-color: #050505; color: rgb(157, 139, 139); }
+
+    li { display: inline-block; border-right: solid 1px white; border-radius: 15px; }
+    li:last-child { border-right: none; }
+
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar">
+    <ul>
+    <li><a class="current" href="/css/intro">>> NEW ARRIVALS 20% SALE !</a></li>
+        <ul style="float:right; list-style-type:none;">
+            
+            <li><a href="/bbs/login.php">Login</a></li>
+            <li><a href="/bbs/register_form.php">Join</a></li>
+            <li><a href="/bbs/cart.php">Cart</a></li>
+        </ul>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>
