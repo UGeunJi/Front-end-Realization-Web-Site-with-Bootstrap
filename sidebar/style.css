@@ -1,10 +1,25 @@
+@media (max-height : 480px){
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+}
+
 .sidebar h2{
+  position: relative;
   margin-top: 30px;
   border-bottom: 3px solid black;
   padding-bottom: 10px;
   align-items: flex-start;
-
 }
+
 .sidebar {
   position: relative;
   width: 200px;
