@@ -32,11 +32,6 @@ section > img{
     align-items: right;
 }
 
-.btn{
-    background: transparent;
-    border: none;
-    outline: none;
-}
 #footer {
     clear:both;
     width:100%;
@@ -56,7 +51,7 @@ section > img{
 
 #footer.timeinfo p{
     /*padding: 100px 0 0 100px;*/
-    margin: 0 20px 20px 0;
+    margin: 0 50px 50px 0;
 }
 
 #footer.companyinfo{
@@ -65,11 +60,9 @@ section > img{
     right:10%;
 }
 #footer.companyinfo p{
-    /*padding: 100px 100px 0 0;*/
-    margin: 0 20px 20px 0;
+    margin: 0 50px 50px 0;
     text-align: right;
 }
-
 figure:hover{
     content:"";
     top:0;bottom:0;left:0;right:0;
@@ -94,4 +87,14 @@ figure:hover{
 
 .my-cursor {
     cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+    border: 1px solid white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
 }
