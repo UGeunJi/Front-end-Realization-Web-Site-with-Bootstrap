@@ -6,13 +6,15 @@ body{
     font-style: 'pretendard';
 }
 #container{
-    width: 70%;
-    left:100px;
-    top: 100px;
+    width: 85%;
+    top: 40px;
     margin-top: 30px;
     position: relative;
-    margin-left: 200px;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    left: 8%;
+    margin-left: 8%;
+    justify-content: flex-end;
 }
 
 section{
@@ -84,4 +86,12 @@ figure:hover{
     padding: 0;
     margin: 0;
     margin-top: 0;
+}
+
+.my-xl {
+    font-size: 12px;
+}
+
+.my-cursor {
+    cursor: pointer;
 }
