@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/0d1c1758fd.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="navigation_bar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
     <style>
         li {
             display: inline;
@@ -105,7 +114,7 @@
             <figcaption>
                 <h2>Wave Glass</h2>
                 <p>17000원</p>
-                <i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i>
+                <button class="btn" onclick=""><i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i></button>
             </figcaption>
         </figure></section>
         <section><figure>
@@ -113,15 +122,14 @@
             <figcaption>
                 <h2>Plate</h2>
                 <p>21000원</p>
-                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
-            </figcaption>
+                <button class="btn" onclick=""><i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i></button>
         </figure></section>
         <section><figure>
             <img src="images/glass-mug.jpg" alt="" width="350" height="500">
             <figcaption>
                 <h2>Glass Mug</h2>
                 <p>13000원</p>
-                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
+                <button class="btn" onclick=""><i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i></button>
             </figcaption>
         </figure></section>
         <section><figure>
@@ -129,7 +137,7 @@
             <figcaption>
                 <h2>Black Mug</h2>
                 <p>15000원</p>
-                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
+                <button class="btn" onclick=""><i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i></button>
             </figcaption>
         </figure></section>
         <section><figure>
@@ -137,12 +145,11 @@
             <figcaption>
                 <h2>Wood Cutting Board</h2>
                 <p>38000원</p>
-                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
+                <button class="btn" onclick=""><i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i></button>
             </figcaption>           
-        </figure>
-    </section>
+        </figure></section>
     </container>
-        <!--회사 정보-->
+    <!--회사 정보-->
     <footer id="footer">
         <div class="timeinfo">
             <p><h4>TIME INFO</h4></p>
@@ -169,16 +176,15 @@
           <a href="contact.html">CONTACT</a>
         </div>
         <h3></h3>
+        <br>
+        <br>        
+        <div class="search">
+            <form action="https://www.google.com/search">
+            <input type="text" placeholder="Search">
+                <button class="btn" onclick="" type="submit"><i class="fas fa-search my-xl" ></i></button>
+            </form>
+        </div>
       </navi>
-
     </div>
-
-    <script>
-        // listner 방식 
-        $("#heart").click(() => {
-            $("#heart").toggleClass("fa-solid");
-        });
-    </script>
-    
 </body>
 </html>
