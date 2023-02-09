@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/0d1c1758fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/0d1c1758fd.css" crossorigin="anonymous">
+    <style>
+        .my-xl {
+            font-size: 12px;
+        }
+
+        .my-cursor {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <container id="footer">
-    <div>
+    <div id="item-wrapper">
         <section><figure>
             <img src="images/cup1.jpg" alt="" width="350" height="500">
             <figcaption>
                 <h2>Wave Glass</h2>
                 <p>17000원</p>
+                <i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i>
             </figcaption>
         </figure></section>
         <section><figure>
@@ -22,6 +34,7 @@
             <figcaption>
                 <h2>Plate</h2>
                 <p>21000원</p>
+                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
             </figcaption>
         </figure></section>
         <section><figure>
@@ -29,6 +42,7 @@
             <figcaption>
                 <h2>Glass Mug</h2>
                 <p>13000원</p>
+                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
             </figcaption>
         </figure></section>
         <section><figure>
@@ -36,15 +50,19 @@
             <figcaption>
                 <h2>Black Mug</h2>
                 <p>15000원</p>
+                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
             </figcaption>
         </figure></section>
+        <br>
         <section><figure>
             <img src="images/wood.jpg" alt="" width="350" height="500">
             <figcaption>
                 <h2>Wood Cutting Board</h2>
                 <p>38000원</p>
+                <i id="heart" class="fa-regular fa-heart my-xl" onclick=""></i>
             </figcaption>           
-        </figure></section>
+        </figure>
+    </section>
     </container>
         <!--회사 정보-->
         <footer id="footer">
@@ -61,6 +79,12 @@
             </div>
         </footer>
     </div>
+    <script>
+        // listner 방식 
+        $("#heart").click(() => {
+            $("#heart").toggleClass("fa-solid");
+        });
+    </script>
     
 </body>
 </html>
