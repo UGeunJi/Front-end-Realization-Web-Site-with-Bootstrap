@@ -1,0 +1,45 @@
+.sidebar h2{
+    position: relative;
+    margin-top: 20px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    align-items: flex-start;
+  }
+  
+.sidebar {
+    position: relative;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 40px;
+    bottom: 0;
+}
+.sidebar h3{
+    position: relative;
+    margin-top: 10px;
+    border-bottom: 1px solid darkgray;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+  
+  .navi-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .navi-links a {
+    color: #919191;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navi-links a:hover {
+    color: #000;
+    font-weight: bold;
+  }
+  
