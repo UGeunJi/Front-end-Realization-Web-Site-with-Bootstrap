@@ -10,8 +10,94 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/0d1c1758fd.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="navigation_bar.css">
+    <style>
+        li {
+            display: inline;
+        }
+    
+    
+        li {
+            float: left;
+        }
+    
+        li a {
+            display: block;
+            background-color: #131313;
+            padding: 8px;
+        }
+    
+        ul {
+            background-color: #000000;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    
+        li {
+            float: left;
+        }
+    
+        li a {
+            display: block;
+            background-color: #040404;
+            color: #fcfcfb;
+            padding: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: thin;
+        }
+    
+        li a:hover {
+            background-color: #060606;
+            color: rgb(0, 0, 0);
+        }
+    
+    
+        li a.current {
+            background-color: #000000;
+            color: white;
+        }
+    
+        li a:hover:not(.current) {
+            background-color: #050505;
+            color: rgb(157, 139, 139);
+        }
+    
+        li { float: left; border-right: solid 1px white; }
+        li:last-child {
+            border-right: none;
+        }
+        
+        header {
+        position: fixed;
+        top: 0;
+        /* width: 100% */
+        left: 0;
+        right: 0;
+
+        /* 생략 */
+        }
+
+    </style>
+    
 </head>
 <body>
+    <header id="header">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar">
+          <ul>
+            <li><a class="current" href="/css/intro">>> NEW ARRIVALS 20% SALE !</a></li>
+            <ul style="float:right; list-style-type:none;">
+    
+              <li><a href="/bbs/login.php">Login</a></li>
+              <li><a href="/bbs/register_form.php">Join</a></li>
+              <li><a href="/bbs/cart.php">Cart</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <container id="container">
     <div>
         <section><figure>
