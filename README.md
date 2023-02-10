@@ -1,6 +1,6 @@
 ## :computer: Bootstrap 이용해서 소품 구매 사이트 구현하기 :department_store:
 
-### :clapper: 서비스 MockUp
+### :clapper: 서비스 MockUp [템플릿 보기](https://imweb.me/theme)
 
 ![bootstrap_mockup](https://user-images.githubusercontent.com/84713532/217990846-b18b808a-e326-44ea-bf22-9fbc58f937d5.gif)
 
