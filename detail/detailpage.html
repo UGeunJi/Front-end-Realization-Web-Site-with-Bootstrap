@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="default.css">
 </head>
 <body>
+    <div class="order_container">
+    <div class="detail">
+        <img src="images/cup1.jpg" alt=""></a>
+    </div>
     <div class="product_view">
         <h2> Wave Glass</h2>
+        <h6> 17,000원 </h6>
         <table>
             <colgroup>
             <col style="width:px;"> <!--한쪽은 짧고 한쪽은 길게, 유동적으로 움직일 수 있게-->
@@ -19,43 +24,39 @@
             </colgroup>
         <tbody>
         <tr>
-            <th>판매가</th>
-            <td>17,000원</td>
-        </tr>
-        <tr>
             <th>구매혜택</th>
-            <td>1,700 Point 적립예정</td>
+            <td>&nbsp;1,700 Point 적립예정</td>
         </tr>
         <tr>
             <th>배송방법</th>
-            <td>택배</td>
+            <td>&nbsp;택배</td>
         </tr>
         <tr>
             <th>배송비</th>
-            <td>2,500원(50,000원 이상 무료배송)</td>
+            <td>&nbsp;2,500원(50,000원 이상 무료배송)</td>
         </tr>
         <tr>
             <th>수량</th>
-            <td>
+            <td>&nbsp;
                 <input type="number">
                 <a href="#a"></a>
                 <a href="#a"></a>
             </td>
         </tr>
         <tr>
-            <th>결제급액</th>
-            <td>17,000원</td>
+            <th>결제금액</th>
+            <td>&nbsp;</td>
         </tr>
         </tbody>    
     </table>
+    <br>
     <div>
-        <img src="images/cup1.jpg" alt="" width="500" height="500">
+        <button class= "purchase" onclick=""><a href="#a">구매하기</a></button>&nbsp;
+        <button class= "cart" onclick=""><a href="#a">장바구니</a></button>
     </div>
-    <div>
-        <a href="#a">구매하기</a>
-        <a href="#a">장바구니</a>
-    </div>
-    </div>
+    
+    <br>
+    <br>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Product Page</a>
@@ -81,24 +82,24 @@
 
     <div class="container my-5">
         <section id="product-info">
-            <h3 class="text-center">상세정보</h3>
-            <p style="font-size: 15px;">상품명: ---<br>재질: --- <br>원산지: ---<br></p>
+            <h2 class="text-center">상세정보</h2>
+            <p>Product information goes here.</p>
         </section>
 
         <hr>
 
         <section id="product-reviews">
-            <h3 class="text-center">구매평 (2)</h3>
+            <h2 class="text-center">구매평 (0)</h2>
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>Downnote</h5>
-                            <p style="font-size: 15px;">바닥에 떨어뜨려고 깨지지 않고 아주 튼튼하네요! <br> 잘 쓰고 있습니다! ㅎㅎ</p>
+                            <h5>구매자1</h5>
+                            <p>Review content</p>
                         </li>
                         <li class="list-group-item">
-                            <h5>bmr03016</h5>
-                            <p style="font-size: 15px;">2개월 째 배송되고 있지 않지만 너무 기대됩니다 ㅎㅎ</p>
+                            <h5>구매자2</h5>
+                            <p>Review content</p>
                         </li>
                     </ul>
                 </div>
@@ -108,27 +109,31 @@
         <hr>
 
         <section id="product-q-a">
-            <h3 class="text-center">Q&A (2)</h3>
+            <h2 class="text-center">Q&A (0)</h2>
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>UGeunJi</h5>
-                            <p style="font-size: 15px;">200개 정도 추가 구매를 하고 싶습니다. 가능한가요?</p>
+                            <h5>구매자1</h5>
+                            <p>Question content</p>
                             <p class="font-weight-bold">Answer:</p>
-                            <p style="font-size: 15px;">네, UGeunJi님 <br>가능하십니다.</p>
+                            <p>Answer content</p>
                         </li>
                         <li class="list-group-item">
-                            <h5>HyoJoon-Yang</h5>
-                            <p style="font-size: 15px;">주문한 상품이 1달째 오지 않고 있습니다. 배송 중인가요?</p>
+                            <h5>구매자2</h5>
+                            <p>Question content</p>
                             <p class="font-weight-bold">Answer:</p>
-                            <p style="font-size: 15px;">네, HyoJoon-Yang님 <br> 맞습니다. 조금만 더 기다려주세요.</p>
+                            <p>Answer content</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
     </div>
+
+    </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
