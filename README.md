@@ -1,28 +1,30 @@
-## 부트스트랩을 활용한 프론트엔드 목업 구현 CRUD를 생각한 웹사이트 만들기
+## :computer: Bootstrap 이용해서 소품 구매 사이트 구현하기 :department_store:
 
+### :clapper: 서비스 MockUp
 
+![bootstrap_mockup](https://user-images.githubusercontent.com/84713532/217990846-b18b808a-e326-44ea-bf22-9fbc58f937d5.gif)
 
 ## 개요
 
-- 
-- 
-- 
+- HTML
+- CSS
+- JavaScript
+- BootStrap
 
-#### 프로젝트 설명
-
+프로젝트 설명
 
 ### [:pencil2: 프로젝트 결과]()
 
-## :floppy_disk: Mini Project (2023/02/09 ~ 2023/02/10) :date:
+## :pencil: Mini Project (2023/02/09 ~ 2023/02/10) :date:
 
-> :family: 팀명: Paradiso
+###  팀명: Paradiso
 
-| 팀원 | 역할(Code Link) |
-| --- | --- |
-| [양효준](https://github.com/Hyojoon-Yang) | [dd](#dd) |
-| [이상훈](https://github.com/Downnote) | [dd](#dd) |
-| [정제경](https://github.com/bmr03016) | [dd](#dd) |
-| [지우근](https://github.com/UGeunJi) | [dd](#dd)|
+#### > :family: 팀원
+
+- [양효준](https://github.com/Hyojoon-Yang)
+- [이상훈](https://github.com/Downnote)
+- [정제경](https://github.com/bmr03016)
+- [지우근](https://github.com/UGeunJi)
 
 
 ### 시연 영상
