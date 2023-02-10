@@ -1,35 +1,28 @@
 .sidebar h2{
     position: relative;
-    margin-top: 20px;
+    margin-top: 30px;
     border-bottom: 3px solid black;
     padding-bottom: 10px;
     align-items: flex-start;
   }
   
-.sidebar {
+  .sidebar {
     position: relative;
-    width: 230px;
-    background-color: white;
-    padding: 10px;
+    width: 200px;
+    background-color:white;
+    padding: 20px;
     position: fixed;
     left: 0;
-    top: 50px;
+    top: 60px;
     bottom: 0;
-}
-.sidebar h3{
-    position: relative;
-    margin-top: 10px;
-    border-bottom: 1px solid darkgray;
-    padding-top: 10px;
-    align-items: flex-start;
-}
+  }
   
   .navi-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    font-size: 15px;
+    font-size: 10px;
   }
   
   .navi-links a {
@@ -43,3 +36,50 @@
     font-weight: bold;
   }
   
+  
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    
+  }
+  
+  .product-list li {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    align-items:center;
+  }
+  
+  .product-list img {
+    display:table;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .contact-section {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .write-btn{
+  
+    margin: 0 auto;
+    height: 40px; 
+    width: 100px; 
+    background-color: black; 
+    color: white; 
+  }
+  .write-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
