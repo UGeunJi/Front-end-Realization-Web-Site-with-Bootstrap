@@ -1,8 +1,21 @@
-#header li {
-    display: inline;
+* {
+    margin:0 auto;
+    left:0; right:0;
+    padding:0;
 }
 
+#header li {
+    display: inline;
+    position:relative;
+}
 
+.navbar{
+    position: fixed;
+    margin:0 auto;
+    padding:0;
+    left:0;right:0;top:0;
+    z-index:10;
+}
 .navbar li {
     float: left;
 }
@@ -25,13 +38,12 @@
     float: left;
 }
 
-.navbar li a {
+.linkbar{
     display: block;
     background-color: #040404;
     color: #fcfcfb;
     padding: 8px;
     text-decoration: none;
-    text-align: center;
     font-weight: thin;
 }
 
