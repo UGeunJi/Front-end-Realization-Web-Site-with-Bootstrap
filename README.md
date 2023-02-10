@@ -19,7 +19,7 @@
 
 ![image](https://user-images.githubusercontent.com/84713532/218035007-0d6ea8ee-5b49-4905-b423-a8332c888a8a.png)
 
-### [:pencil2: 프로젝트 결과]()
+<!-- ### [:pencil2: 프로젝트 결과]() -->
 
 ## :pencil: Mini Project (2023/02/09 ~ 2023/02/10) :date:
 
