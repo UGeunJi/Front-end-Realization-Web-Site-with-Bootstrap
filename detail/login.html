@@ -1,0 +1,72 @@
+body{
+    padding:50px;
+    font-style: "pretendard";
+    font-size: 15px;
+}
+
+.product_view{ 
+    position:relative;
+    display: inline;
+    width:40vw; 
+    box-sizing:border-box;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <section class="login-form">
+        <h1>로그인</h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id"
+                autocomplete="off" required> <!--id넣는 창넣기-->
+                <label for="id"> USER ID</label>
+
+            <div class="int-area">
+                 <input type="password" name="pw" id="pw"
+                 autocomplete="off" required> <!--pw넣는 창넣기-->
+                <label for="pw"> PASSWORD</label>
+            </div>
+            <div class="button-area">
+                <button id="button" 
+                type="submit">LOGIN</button> <!--로그인 버튼-->
+            </div>
+        </form>
+            <div class="caption">
+                <a href="">아이디</a> <!--아이디 잃어버렸을 때-->
+                &nbsp;
+                <a href="">비밀번호 찾기</a> <!--비밀번호 잃어버렸을 때-->
+            </div>
+        </div>
+    </section>
+    <script>
+        let id = $('#id');
+        let pw = $('#pw');
+        let button = $('#button');
+
+        $(btn).on('click', function() {
+            if ($(id). val() == "") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function(){
+                    $('label').removeClass('warning')
+                }, 1500);
+            }
+            else if($(pw).val() == ""){
+                $(pw).next('label').addClass('warning');
+                setTimeout(function(){
+                    $('label').removeClass('warning')
+                }, 1500);
+            }
+        })
+
+    </script>
+</body>
+</html>
