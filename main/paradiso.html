@@ -4,16 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARADISO</title>
+    <title>Welcome to Paradiso</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/55287f411f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="navigation_bar.css">
+  
 </head>
 <body>
+    <!--상단바 만들기-->
+    <header id="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="navbar">
+            <ul>
+                <li><a class="current" href="/css/intro">>> NEW ARRIVALS 20% SALE !</a></li>
+                <ul style="float:right; list-style-type:none;">
+    
+                <li><a class = linkbar href="login.html">Login</a></li>
+                <li><a class = linkbar href="/bbs/register_form.php">Join</a></li>
+                <li><a class = linkbar href="/bbs/cart.php">Cart</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <!--사이드바-->
+    <navi id="navi">
+        <div class="sidebar">
+            <h2></h2>
+            <h1>Paradiso</h1>
+            <h3></h3>
+        <div class="navi-links">
+          <a href="#">ALL PRODUCT</a>
+          <a href="notice.html">NOTICE</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <h3></h3>
+        <br>
+        <br>        
+        <div class="search">
+            <form action="https://www.google.com/search">
+                <input type="text" placeholder="Search">
+                <button class="btn" onclick="" type="submit"><i class="fas fa-search my-xl"></i></button>
+            </form>
+        </div>
+    </navi>
+    </div>
+
     <container id="container">
     <div>
         <section><figure>
+            <a href="detailpage.html">
             <img src="images/cup1.jpg" alt="" width="350" height="500">
             <figcaption>
                 <h2>Wave Glass</h2>
@@ -21,7 +63,7 @@
                 <button class="btn" onclick=""><i id="heart" class="fa-regular fa-heart my-xl my-cursor"></i></button>
                 <button class="btn" onclick=""><i class="fa-regular fa-comment my-xl my-cursor"></i></button>
                 <button class="btn" onclick=""><i class="fa-solid fa-cart-shopping my-xl my-cursor"></i></button>
-            </figcaption>
+            </figcaption></a>
         </figure></section>
         <section><figure>
             <img src="images/plate1.jpg" alt="" width="350" height="500">
@@ -77,28 +119,5 @@
             <p>Tel: 00 000 0000 l Fax: 00 000 0000</p>
         </div>
         </footer>
-    <!--사이드바-->
-    <div class="sidebar">
-        <h2></h2>
-        <h1>Paradiso</h1>
-        <h3></h3>
-      <navi>
-        <div class="navi-links">
-          <a href="#">ALL PRODUCT</a>
-          <a href="notice.html">NOTICE</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">CONTACT</a>
-        </div>
-        <h3></h3>
-        <br>
-        <br>        
-        <div class="search">
-            <form action="https://www.google.com/search">
-                <input type="text" placeholder="Search">
-                <button class="btn" onclick="" type="submit"><i class="fas fa-search my-xl"></i></button>
-            </form>
-        </div>
-      </navi>
-    </div>
 </body>
 </html>
