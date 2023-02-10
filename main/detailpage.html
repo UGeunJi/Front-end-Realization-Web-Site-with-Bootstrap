@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+<body>
+    <div class="order_container">
+    <div class="detail">
+        <img src="images/cup1.jpg" alt=""></a>
+    </div>
+    <div class="product_view">
+        <h2> Wave Glass</h2>
+        <h6> 17,000원 </h6>
+        <table>
+            <colgroup>
+            <col style="width:px;"> <!--한쪽은 짧고 한쪽은 길게, 유동적으로 움직일 수 있게-->
+            <col>
+            </colgroup>
+        <tbody>
+        <tr>
+            <th>구매혜택</th>
+            <td>&nbsp;1,700 Point 적립예정</td>
+        </tr>
+        <tr>
+            <th>배송방법</th>
+            <td>&nbsp;택배</td>
+        </tr>
+        <tr>
+            <th>배송비</th>
+            <td>&nbsp;2,500원(50,000원 이상 무료배송)</td>
+        </tr>
+        <tr>
+            <th>수량</th>
+            <td>&nbsp;
+                <input type="number" name="number" id="number" min="0", placeholder="0">
+                <a href="#a"></a>
+                <a href="#a"></a>
+            </td>
+        </tr>
+        <tr>
+            <th>결제금액</th>
+            <td>&nbsp;<span id="totalPrice"></span></td>
+            </tr>
+        </tbody>    
+    </table>
+    <br>
+    <div>
+        <button class= "purchase" onclick=""><a href="#a">구매하기</a></button>&nbsp;
+        <button class= "cart" onclick=""><a href="#shoppingcart.html">장바구니</a></button>
+    </div>
+    
+    <br>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Product Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-info">상세정보</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-reviews">구매평 (0)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-q-a">Q&A (0)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <section id="product-info">
+            <h3 class="text-center">상세정보</h3>
+            <p style="font-size: 15px;">상품명: ---<br>재질: --- <br>원산지: ---<br></p>
+        </section>
+
+        <hr>
+
+        <section id="product-reviews">
+            <h2 class="text-center">구매평 (0)</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h5>Downnote</h5>
+                            <p style="font-size: 15px;">바닥에 떨어뜨려고 깨지지 않고 아주 튼튼하네요! <br> 잘 쓰고 있습니다! ㅎㅎ</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>bmr03016</h5>
+                            <p style="font-size: 15px;">2개월 째 배송되고 있지 않지만 너무 기대됩니다 ㅎㅎ</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="product-q-a">
+            <h3 class="text-center">Q&A (0)</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h5>UGeunJi</h5>
+                            <p style="font-size: 15px;">200개 정도 추가 구매를 하고 싶습니다. 가능한가요?</p>
+                            <p style="font-size: 15px;">네, UGeunJi님 <br>가능하십니다.</p>
+                            <p>Answer content</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>HyoJoon-Yang</h5>
+                            <p style="font-size: 15px;">주문한 상품이 1달째 오지 않고 있습니다. 배송 중인가요?</p>
+                            <p style="font-size: 15px;">네, HyoJoon-Yang님 <br> 맞습니다. 조금만 더 기다려주세요.</p>
+                            <p>Answer content</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    ​<script>
+    let input = document.querySelector('#number');
+    let totalPrice = document.getElementById('totalPrice');
+    input.onchange = handleChange;
+    function handleChange(e) {
+        totalPrice.textContent = e.target.value * 17000
+    }
+    </script>
+</body>
+</html>
