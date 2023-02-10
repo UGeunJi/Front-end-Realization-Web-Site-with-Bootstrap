@@ -71,17 +71,29 @@
 
 ## Main Page
 
+```html
+
+```
+
 ### Main Page 시연 영상
 
 ![main_bar](https://user-images.githubusercontent.com/84713532/218021846-43f0b37d-6f50-4fb4-a04e-fe9948967d03.gif)
 
 ## Navigation Bar
 
+```html
+
+```
+
 ### Navigation Bar 시연 영상
 
 ![navigation_bar](https://user-images.githubusercontent.com/84713532/218021185-3690cca9-28f8-4f3f-ac7a-66b5fc9b901b.gif)
 
 ## Side bar
+
+```html
+
+```
 
 ### Side bar 시연 영상
 
