@@ -38,21 +38,21 @@
         <tr>
             <th>수량</th>
             <td>&nbsp;
-                <input type="number" min="0">
+                <input type="number" name="number" id="number" min="0", placeholder="0">
                 <a href="#a"></a>
                 <a href="#a"></a>
             </td>
         </tr>
         <tr>
             <th>결제금액</th>
-            <td>&nbsp;</td>
-        </tr>
+            <td>&nbsp;<span id="totalPrice"></span></td>
+            </tr>
         </tbody>    
     </table>
     <br>
     <div>
         <button class= "purchase" onclick=""><a href="#a">구매하기</a></button>&nbsp;
-        <button class= "cart" onclick=""><a href="#a">장바구니</a></button>
+        <button class= "cart" onclick=""><a href="#shoppingcart.html">장바구니</a></button>
     </div>
     
     <br>
@@ -94,7 +94,7 @@
                 <div class="col-md-12">
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <h5>Dawnnote</h5>
+                            <h5>Downnote</h5>
                             <p style="font-size: 15px;">바닥에 떨어뜨려고 깨지지 않고 아주 튼튼하네요! <br> 잘 쓰고 있습니다! ㅎㅎ</p>
                         </li>
                         <li class="list-group-item">
@@ -116,14 +116,14 @@
                         <li class="list-group-item">
                             <h5>UGeunJi</h5>
                             <p style="font-size: 15px;">200개 정도 추가 구매를 하고 싶습니다. 가능한가요?</p>
-                            <p style="font-weight: bold;">Answer</p>
                             <p style="font-size: 15px;">네, UGeunJi님 <br>가능하십니다.</p>
+                            <p>Answer content</p>
                         </li>
                         <li class="list-group-item">
                             <h5>HyoJoon-Yang</h5>
                             <p style="font-size: 15px;">주문한 상품이 1달째 오지 않고 있습니다. 배송 중인가요?</p>
-                            <p style="font-weight: bold;">Answer</p>
                             <p style="font-size: 15px;">네, HyoJoon-Yang님 <br> 맞습니다. 조금만 더 기다려주세요.</p>
+                            <p>Answer content</p>
                         </li>
                     </ul>
                 </div>
@@ -138,5 +138,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    ​<script>
+    let input = document.querySelector('#number');
+    let totalPrice = document.getElementById('totalPrice');
+    input.onchange = handleChange;
+    function handleChange(e) {
+        totalPrice.textContent = e.target.value * 17000
+    }
+    </script>
 </body>
 </html>
