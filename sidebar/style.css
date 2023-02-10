@@ -1,3 +1,32 @@
+
+.top-links {
+  display: none; 
+}
+
+/* 윈도우 크기가 900px 이하일 때 */
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .top-links {
+    display:block;
+    border: solid 1px;
+    padding: 20px;
+    background-color: white;
+    color: #fff;
+    
+  }
+  .top-links a{
+    display: inline-table;
+    border:1px solid #000;
+    margin:auto ;
+    text-decoration: none;
+  }
+}
+
+
+
 .sidebar h2{
   position: relative;
   margin-top: 30px;
@@ -13,15 +42,15 @@
   padding: 20px;
   position: fixed;
   left: 0;
-  top: 60px;
+  top: 40px;
   bottom: 0;
+  margin-left: 0;
+
 }
 
 .navi-links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
   font-size: 10px;
 }
 
@@ -29,6 +58,8 @@
   color: #919191;
   margin-top: 10px;
   transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+  text-decoration: none;
 }
 
 .navi-links a:hover {
