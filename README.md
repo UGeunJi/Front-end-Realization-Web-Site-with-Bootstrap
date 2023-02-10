@@ -20,6 +20,7 @@
 | 팀원 | 역할(Code Link) |
 | --- | --- |
 | [양효준](https://github.com/Hyojoon-Yang) | [dd](#dd) |
+| [이상훈](https://github.com/Downnote) | [dd](#dd) |
 | [정제경](https://github.com/bmr03016) | [dd](#dd) |
 | [지우근](https://github.com/UGeunJi) | [dd](#dd)|
 
